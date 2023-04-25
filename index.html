@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point of Sale Systems</title>
+    <link rel="stylesheet" href="css/form.css">    
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Current Activity</legend>
+            <h1 class="title">MAIN MENU</h1>
+            <p>Total Amount Reloaded: Php <span id="reload"></span></p>
+            <p>Total Items Sold: <span id="sold"></span></p></div>
+            <p>Total Revenue: Php <span id="revenue"></span></p>
+        </fieldset>
+	    <fieldset>
+            <legend>Actions Available</legend>
+            <h1 class="title">ACTIONS</h1>
+            <div id="generatedForm">
+            </div>
+            <div id="theForm">
+                <div>
+                    <input type="button" value="Display Product List" class="option" id="displayProducts">
+                </div>
+                <div>
+                    <input type="button" value="Display Customer List" class="option" id="displayCustomers">
+                </div>
+                <div>
+                    <input type="button" value="Add Product" class="option" id="addProduct">
+                </div>
+                <div>
+                    <input type="button" value="Add Customer" class="option" id="addCustomer">
+                </div>
+                <div>
+                    <input type="button" value="Reload Balance" class="option" id="reloadBalance">
+                </div>
+                <div>
+                    <input type="button" value="Process an Order" class="option" id="processOrder">
+                </div>
+                <div>
+                    <input type="button" value="Display Products to Restock" class="option" id="displayRestock">
+                </div>
+                <div>
+                    <input type="button" value="Restock Product" class="option" id="restockProduct">
+                </div>
+            </div>
+            <div id="output"></div>
+	    </fieldset>
+	</form>
+    <fieldset id="fieldOutput">
+        <legend id="fieldLegend"></legend>
+        <table id="tableOutput">
+            <!--<thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Quantity Remaining</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <th>Apples</th>
+                    <th>20.0</th>
+                    <th>5</th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>Mangoes</th>
+                    <th>30.0</th>
+                    <th>5</th>
+                </tr>
+            </tbody>-->
+        </table>
+    </fieldset>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
