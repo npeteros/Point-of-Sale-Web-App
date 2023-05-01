@@ -11,7 +11,7 @@ This is a basic Point of Sale (POS) system for managing products, customers, and
 ## Installation and Usage
 1. Clone the repository:
    ```
-   git clone https://github.com/npeteros/point-of-sale.git
+   git clone https://github.com/npeteros/Point-of-Sale-Web-App
    ```
 2. Open the `index.html` file in a web browser.
 
