@@ -121,6 +121,7 @@ function addProduct() {
     $("#output").text("");
     $("#theForm").hide();
     $("#generatedForm").html("");
+    $("#generatedForm").prepend("<input type='button' value='Go Back' class='option' onclick='location.reload();'>");
     $("#generatedForm").prepend("<input type='button' value='Add Product' class='option' id='addProd'>");
     $("#generatedForm").prepend("<label for='quantity'>Product Quantity</label><input type='number' id='prodQty' min=1 required>");
     $("#generatedForm").prepend("<label for='price'>Product Price</label><input type='number' id='prodPrice' min=1 required>");
@@ -157,9 +158,11 @@ function addCustomer() {
     $("#output").text("");
     $("#theForm").hide();
     $("#generatedForm").html("");
+    $("#generatedForm").prepend("<input type='button' value='Go Back' class='option' onclick='location.reload();'>");
     $("#generatedForm").prepend("<input type='button' value='Add Customer' class='option' id='addCust'>");
     $("#generatedForm").prepend("<label for='balance'>Customer Balance</label><input type='number' id='custBal' min=0 required>");
     $("#generatedForm").prepend("<label for='name'>Customer Name</label><input type='text' id='custName' required>");
+    
 
     $("#addCust").on("click", ajax_addCustomer);
 }
@@ -190,6 +193,7 @@ function reloadBalance() {
     $("#output").text("");
     $("#theForm").hide();
     $("#generatedForm").html("");
+    $("#generatedForm").prepend("<input type='button' value='Go Back' class='option' onclick='location.reload();'>");
     $("#generatedForm").prepend("<input type='button' value='Reload Balance' class='option' id='reloadBal'>");
     $("#generatedForm").prepend("<label for='balance'>New Balance</label><input type='number' id='custBal' min=0 required>");
     $("#generatedForm").prepend("<label for='id'>Customer ID</label><input type='text' id='custID' required>");
@@ -225,6 +229,7 @@ function processOrder() {
     $("#theForm").hide();
     $("#generatedForm").html("");
 
+    $("#generatedForm").prepend("<input type='button' value='Go Back' class='option' onclick='location.reload();'>");
     $("#generatedForm").prepend("<input type='button' value='Process Order' class='option' id='procOrder'>");
     $("#generatedForm").prepend("<label for='qty'>Quantity to Order</label><input type='number' id='qty' min=1 required>");
     $("#generatedForm").prepend("<label for='pid'>Product ID</label><input type='text' id='prodID' required>");
@@ -317,6 +322,7 @@ function restockProduct() {
     $("#output").text("");
     $("#theForm").hide();
     $("#generatedForm").html("");
+    $("#generatedForm").prepend("<input type='button' value='Go Back' class='option' onclick='location.reload();'>");
     $("#generatedForm").prepend("<input type='button' value='Restock Product' class='option' id='restockProd'>");
     $("#generatedForm").prepend("<label for='balance'>New Quantity</label><input type='number' id='qty' min=1 required>");
     $("#generatedForm").prepend("<label for='id'>Product ID</label><input type='text' id='prodID' required>");
